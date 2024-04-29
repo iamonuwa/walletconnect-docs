@@ -80,7 +80,7 @@ With that the base setup is complete and you can start receiving push notificati
 Note, that from time to time, the device token is refreshed, so you must make sure to register it again.
 
 ```ts
-impoprt messaging from '@react-native-firebase/messaging';
+import messaging from '@react-native-firebase/messaging';
 
 messaging().onTokenRefresh(async token => {
     await web3wallet.registerDeviceToken({
